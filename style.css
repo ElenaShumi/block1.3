@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes/TTLakes-Black.eot');
+    src: local('TTLakes/TT Lakes Regular'), local('TTLakes/TTLakes-Regular'),
+        url('TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes/TTLakes-Regular.woff') format('woff'),
+        url('TTLakes/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('TTLakes/TTLakes-Bold.eot');
+    src: local('TTLakes/TT Lakes Bold'), local('TTLakes/TTLakes-Bold'),
+        url('TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakes/TTLakes-Bold.woff') format('woff'),
+        url('TTLakes/TTLakes-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+  font-family: "TT Lakes";
+  margin: 0;
+  min-width: 100%;
+}
+
+.header {
+    min-width: 320px;
+    border-bottom: 1px solid #D9FFF5;
+}
+
+.header__menu {
+    padding: 18.59px 16px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu__logo {
+    width: 96.55px;
+    height: 50.81px;
+    margin-right: 38.73px;
+}
+
+.menu__logo::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 186px;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+}
+
+.menu__button {
+    display: block;
+    border: 0;
+    background-color: white;
+    padding: 0;
+}
+
+.menu__button--left {
+    order: -1;
+    margin-right: 16.73px;
+}
+
+.menu__button--visible2 {
+    margin-left: 16px;
+}
+
+.menu__button--invisible {
+    display: none;
+}
+
+.menu__button--visible1 span,
+.menu__button--visible2 span {
+    display: none;
+}
+
+.main-page {
+    min-width: 320px;
+    height: 509px;
+    background-color: #F8F8F8;
+}
+
+.main-page__title {
+    padding-left: 16px;
+    padding-top: 24px;
+}
+
+h1 {
+   margin: 0;
+   font-size: 28px;
+   color: black;
+   font-weight: bold;
+}
+
+.main-page__title::before {
+    content: '';
+    position: absolute;
+    top: 112px;
+    left: -1px;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-radius: 0 30px 30px 0;
+}
+
+.main-page__menu {
+    margin-left: 16px;
+    margin-top: 24px;
+}
+
+.slide-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    list-style: none;
+    overflow: scroll;
+    padding: 0;
+    margin: 0;
+}
+
+.slide-menu__link {
+    flex-basis: auto;
+    flex-shrink: 0;
+    list-style: none;
+    padding: 8px 9.3px 8px 16.54px;
+}
+
+.slide-menu__link a {
+    text-decoration: none;
+    color: #7E7E82;
+    font-size: 16px;
+}
+
+.slide-menu__link:first-child {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+}
+
+.main-page__first-block {
+    margin-top: 24px;
+}
+.first-block {
+}
+.first-block__text {
+    font-size: 14px;
+    margin: 0 16px 16px 16px;
+}
+
+.first-block__text--second {
+    display: none;
+}
+
+.first-block__button {
+    font-size: 16px;
+    border: 0;
+    padding: 0;
+    background-color: #F8F8F8;
+    line-height: 24px;
+    margin-left: 16px;
+}
+
+.first-block__button img,
+.first-block__button span {
+    vertical-align: middle;
+}
+
+.first-block__image {
+    margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+    .header__menu {
+        padding: 18.59px 24px;
+        justify-content: flex-end;
+    }
+    .menu__button--invisible {
+        display: block;
+        margin-left: 16px;
+    }
+    .menu__button:nth-child(6) {
+        margin-left: 42px;
+    }
+    .menu__button:nth-child(3) {
+        margin-left: 250.73px;
+    }
+    .menu__logo{
+        margin-right: 0;
+        margin-left: 26px;
+    }
+    .menu__logo::after {
+        left: 84px;
+    }
+    .menu__button:nth-child(5)::after {
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: 626px;
+        width: 2px;
+        height: 32px;
+        background-color: #EAEAEA;
+        border-radius: 1px;
+    }
+    .main-page__title {
+       padding-left: 24px;
+    }
+    .main-page__menu {
+        margin-left: 24px;
+        margin-top: 32px;
+    }
+    .main-page__first-block {
+        display: flex;
+        margin-left: 24px;
+        margin-top: 32px;
+        margin-right: 25px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .first-block__column1 {
+        margin: 0;
+        width: 320px;
+    }
+    .first-block__text {
+        margin: 0;
+    }
+    .first-block__text--second {
+        display: block;
+        padding-top: 16px;
+    }
+    .first-block__text--second  span {
+        display: none;
+    }
+    .first-block__image {
+        margin-top: 0;
+        width: 360px;
+        height: 208px;
+        border-radius: 5px;
+    }
+    .first-block__button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header {
+        visibility: hidden;    
+        padding: 0;
+        height: 0;  
+    }
+    .menu {
+        justify-content: flex-end;
+        padding: 42px 32px 8px 0;
+    }
+    .menu__button--visible1,
+    .menu__button--visible2 {
+        visibility: visible;
+        background-color: #F8F8F8;
+        margin-left: 32px;
+    }
+    .menu__button--visible1 span,
+    .menu__button--visible2 span {
+        display: inline;
+        font-family: "TT Lakes";
+        font-size: 16px;
+        padding-right: 8px;
+        vertical-align: middle;
+    }
+
+    .menu__button--visible1 img,
+    .menu__button--visible2 img {
+        vertical-align: middle;
+    }
+    .main-page__title {
+        padding-top: 42px;
+        padding-left: 32px;
+    }
+    .main-page__title::before {
+        top: 42px;  
+    }
+    .slide-menu {
+        overflow: visible;
+        flex-wrap: wrap;
+    }
+    .slide-menu__link {
+        padding: 8.63px 21.7px 8.63px 22.64px;
+    }
+    .main-page__menu {
+        margin-left: 32px;
+        margin-top: 8px;
+    }
+    .main-page__first-block {
+        margin-left: 35px;
+        margin-top: 16.22px;
+        margin-right: 28.65px;
+    }
+    .first-block__text--second  span {
+        display: inline;
+    }
+    .first-block__column1 {
+        width: 490px;
+    }
+    .first-block__image {
+        width: 531.35px;
+        height: 307px;
+        margin-top: -8px;
+    }
+    .first-block__button {
+        margin-left: 0;
+        margin-top: 13.78px;
+    }
+}
