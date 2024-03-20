@@ -9,29 +9,25 @@
 <body>
     <header class="header">
         <div class="header__menu menu">
-            <div class="menu__logo">
-                <img src="icons/Group.svg" alt="Логотип">
+            <div class="menu__group-button">
+                <button class="menu__button burger"></button>
             </div>
-            <button class="menu__button menu__button--left">
-                <img src="icons/burger.svg" alt="Меню">
-            </button>
-            <button class="menu__button menu__button--invisible">
-                <img src="icons/call.svg" alt="Вызов">
-            </button>
-            <button class="menu__button menu__button--invisible">
-                <img src="icons/chat.svg" alt="Чат">
-            </button>
-            <button class="menu__button menu__button--invisible">
-                <img src="icons/profile.svg" alt="Профиль">
-            </button>
-            <button class="menu__button menu__button--visible1">
-                <span>Оставить заявку</span>
-                <img src="icons/repair.svg" alt="Ремонт">
-            </button>
-            <button class="menu__button menu__button--visible2">
-                <span>Статус ремонта</span>
-                <img src="icons/checkstatus.svg" alt="Статус">
-            </button>
+            <div class="menu__logo">
+                <a href="#"></a>
+            </div>
+            <div class="menu__group-button menu__group-button--visible-768">
+                <button class="menu__button call"></button>
+                <button class="menu__button chat"></button>
+                <button class="menu__button profile"></button>
+            </div>
+            <div class="menu__group-button menu__group-button--visible-1120">
+                <button class="menu__button repair">
+                    <span class="repair__caption repair__caption--visible1120">Оставить заявку</span>
+                </button>
+                <button class="menu__button checkstatus">
+                    <span class="checkstatus__caption checkstatus__caption--visible1120">Статус ремонта</span>
+                </button>
+             </div>
         </div>       
     </header>
     <main class="main-page">
@@ -50,13 +46,14 @@
         </nav>
        <div class="main-page__first-block first-block">
          <div class="first-block__column1">
-            <p class="first-block__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
-            <p class="first-block__text first-block__text--second">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span>, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+            <div class="first-block__about">
+                <p class="first-block__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                <p class="first-block__text">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+            </div>
             <button class="first-block__button">
-                <img src="icons/expand.svg" alt="">
             <span>Читать далее</span>
-        </button>
+            </button>
          </div>
          <img class="first-block__image" src="images/Picture.jpg" alt="Логотип и время работы">
        </div>
