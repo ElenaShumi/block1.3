@@ -41,7 +41,7 @@
 }
 .header-menu__button {
 }
-.button {
+.icon-button {
     display: block;
     border: 0;
     background-color: white;
@@ -49,10 +49,10 @@
     width: 40px;
     height: 40px;
 }
-.button--burger {
+.icon-button--burger {
     background: url('icons/burger-active.svg') no-repeat center;
 }
-.button--search {
+.icon-button--search {
     background: url('icons/search.svg') no-repeat center;
 }
 .header-menu__logo {
@@ -110,18 +110,19 @@
     display: flex;
     gap: 16px;
 }
-.button-group__button {
-}
-.button--call {
+
+.icon-button--call {
     background: url('icons/call.svg') no-repeat center;
 }
-.button--chat {
+.icon-button--chat {
     background: url('icons/chat.svg') no-repeat center;
 }
-.button--profile {
+.icon-button--profile {
     background: url('icons/profile.svg') no-repeat center;
 }
-.contact__mail {
+.mail-link,
+.phone-link {
+    color: #1B1C21;
 }
 .contact__phone {
     font-size: 24px;
@@ -147,8 +148,10 @@
     color: #7E7E82;
 }
 
-.button:hover,
+.icon-button:hover,
 .main-menu__link:hover,
-.lang__button:hover {
+.lang__button:hover,
+.contact__phone:hover,
+.contact__mail:hover {
     opacity: 0.5;
 }
