@@ -25,9 +25,13 @@
     font-size: 16px;
     color: #1B1C21;
     line-height: 24px;
+
     width: 320px;
+    height: 100vh;
     position: absolute;
     left: 0;
+    overflow: auto;
+    
     box-shadow: 
         16px 0 52px 0 #0E185033,
         -2px 0 4px 0 #454F7E;
@@ -43,6 +47,7 @@
 }
 .icon-button {
     display: block;
+    cursor:pointer;
     border: 0;
     background-color: white;
     padding: 0;
@@ -60,7 +65,7 @@
     flex-grow: 1;
 }
 .main-page {
-    padding-bottom: 268px;
+    padding-bottom: 260px;
 }
 .main-page__main-menu {
     margin-top: 27.5px;
@@ -72,15 +77,16 @@
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 30px;
 }
 .main-menu__items {
-    height: 32px;
+    /* height: 32px; */
 }
 .main-menu__link {
     display: inline-block;
     color: #1B1C21;
-    height: 30px;
+
+    /* height: 30px; */
 }
 .main-menu__link--active {
     color: #7E7E82;
@@ -138,6 +144,7 @@
 }
 .lang__button {
     display: block;
+    cursor:pointer;
     width: 25px;
     height: 24px;
     border: none;
@@ -153,5 +160,6 @@
 .lang__button:hover,
 .contact__phone:hover,
 .contact__mail:hover {
+    transition-duration: 1s;
     opacity: 0.5;
 }
