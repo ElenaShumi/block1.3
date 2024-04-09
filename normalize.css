@@ -8,6 +8,28 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+ @font-face {
+  font-family: 'TT Lakes';
+  src: url('TTLakes/TTLakes-Black.eot');
+  src: local('TTLakes/TT Lakes Regular'), local('TTLakes/TTLakes-Regular'),
+      url('TTLakes/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+      url('TTLakes/TTLakes-Regular.woff') format('woff'),
+      url('TTLakes/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('TTLakes/TTLakes-Bold.eot');
+  src: local('TTLakes/TT Lakes Bold'), local('TTLakes/TTLakes-Bold'),
+      url('TTLakes/TTLakes-Bold.eot?#iefix') format('embedded-opentype'),
+      url('TTLakes/TTLakes-Bold.woff') format('woff'),
+      url('TTLakes/TTLakes-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
  html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
@@ -22,6 +44,8 @@
   
   body {
     margin: 0;
+    font-family: TT Lakes, sans-serif;;
+    line-height: 24px;
   }
   
   /**
@@ -42,6 +66,11 @@
     margin: 0;
   }
   
+  h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 16px;
+  }
   /* Grouping content
      ========================================================================== */
   
@@ -76,6 +105,15 @@
   a {
     background-color: transparent;
     text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
   }
   
   /**
