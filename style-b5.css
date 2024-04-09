@@ -74,7 +74,7 @@
         font-size: 16px;
         border: 0;
         padding: 0;
-        background: url('/block\ 1.3/icons/expand.svg') #F8F8F8 no-repeat left;
+        background: url('icon\ button/expand.svg') #F8F8F8 no-repeat left;
         line-height: 24px;
         margin-left: 24px;
         text-align: right;
@@ -82,7 +82,7 @@
     }
 
     .brands__button--hide {
-        background: url('/block\ 1.3/icons/expand2.svg') #F8F8F8 no-repeat left;
+        background: url('icon\ button/expand2.svg') #F8F8F8 no-repeat left;
         width: 88px;
     }
 
