@@ -2,13 +2,13 @@ let init = false;
 let swiper;
 
 function swiperCard() {
-  if (document.documentElement.clientWidth <= 768) {
+  if (document.documentElement.clientWidth < 768) {
     if (!init) {
       init = true;
       swiper = new Swiper('.brands__slider', {
         direction: 'horizontal',
         slidesPerView: 'auto',
-        centeredSlides: true,
+        centeredSlides: false,
         spaceBetween: 16,
         pagination: {
           el: '.swiper-pagination',
@@ -23,11 +23,13 @@ function swiperCard() {
 }
 swiperCard();
 window.addEventListener('resize', swiperCard);
+// ____________________________________________________________________________________
 
 const sections = Array.prototype.slice.call(document.querySelectorAll('.menu-brand__item'));
 const btn = document.querySelector('.brands__button');
-let count = 6;
+let count;
 let bool = true;
+let windowWidth = document.documentElement.clientWidth;
 
 function showHide(bool){
   if(bool) {
@@ -53,9 +55,17 @@ btn.addEventListener('click', function(e) {
   }
 });
 
-
-if(document.documentElement.clientWidth > 1120) {
+if(windowWidth >= 768 && windowWidth < 968) {
+  count = 6;
+  showHide(bool);
+} else if(windowWidth >= 968 && windowWidth < 1120) {
   count = 8;
+  showHide(bool);
+} else if(windowWidth >= 1120 && windowWidth < 1328) {
+  count = 8;
+  showHide(bool);
+} else if(windowWidth >= 1328) {
+  count = 10;
   showHide(bool);
 }
 
